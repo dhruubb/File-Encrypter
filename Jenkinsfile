@@ -23,6 +23,7 @@ cd "Password Protection"
 if [ ! -f junit-platform-console-standalone.jar ]; then
 echo "Downloading JUnit..."
 curl -L -o junit-platform-console-standalone.jar https://repo1.maven.org/maven2/org/junit/platform/junit-platform-console-standalone/1.10.0/junit-platform-console-standalone-1.10.0.jar
+fi
 # Compile test files (test folder beside src)
 mkdir -p test-build
 javac -cp junit-platform-console-standalone.jar:build -d test-build
